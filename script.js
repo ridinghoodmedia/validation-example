@@ -44,8 +44,12 @@ function validateForm(form) {
         valid = false;
     };
 
-    // Validate modal
-    // @todo: Add modal validation
+    // Validate checkbox field
+    const checkbox = formFields["termsAndConditions"].checked;
+    if (!(checkbox)) {
+        alert("You must accept the terms and conditions to join.");
+        valid = false;
+    };
 
     if (valid) {
         updateModal(userName, userEmail);

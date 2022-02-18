@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    
+    <title>For Word</title>
+</head>
+<body>
+
+    <!-- wrapper -->
+    <div class="wrapper">
+        
+        <!-- header section-->
+        <div class="flexContainer">
+            
+            <header class="leftSection">
+                <h1>Get More From Your <span>Content</span>.</h1>
+                <p>ForWord helps you optimize your brands' publications to reach a larger audience, integrating social content with your website.</p>
+            </header>
+        
+            <!-- main section -->
+            <main class="rightSection">
+                <h2>Sign up to get your free trial today!</h2>
+        
+                <form action="#" method="GET" class="myForm" name="myForm" id="form">
+        
+                    <label for="userName">Name</label>
+                    <input required type="text" id="userName" name="userName">
+        
+                    <label for="userEmail">Email</label>
+                    <input required type="email" id="userEmail" name="userEmail">
+        
+                    <button class="openBtn" type="submit">Start My Free Trial</button>
+                  
+                  </form>
+        
+            </main>
+
+        </div>
+        
+    </div>
+    
+    <!-- modal -->
+    <div class="modal">
+        <h1>Welcome <span class="modal-user-name">${NAME}</span></h1>
+        <button class="closeBtn">&times;</button>
+        <p>Thanks for filling out the form. A confirmation email has been sent to your <span class="modal-user-email">${EMAIL}</span> account</p>
+    </div>
+    <div class="overlay"></div>
+
+</body>
+</html>
